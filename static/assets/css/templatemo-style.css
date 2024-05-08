@@ -135,7 +135,7 @@ video {
   padding:20px 30px 0;
 }
 .fp-scrollable {
-  height:calc(100vh - 200px) !important;
+  height:calc(100vh - 100px) !important;
 }
 #fp-nav ul li a span {
  display: none;
@@ -273,12 +273,13 @@ video {
 02. HEADER CSS
 ================================================*/
 #header {
-  padding:20px 0;
+  padding:7px 0;
   position: fixed;
   left:0;
   right:0;
   top:0;
   z-index:999;
+  backdrop-filter: blur(10px);
 }
 .container-fluid {
   padding:0 20px;
@@ -288,6 +289,9 @@ a#logo {
   font-size: 32px;
   text-transform: uppercase;
   font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .navbar {
   padding: 0;
@@ -315,7 +319,7 @@ a#logo {
   content:'';
   display:block;
   height: 2px;
-  background:#fff;
+  background:#ffcc00;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   -webkit-transform:scale(0);
@@ -362,7 +366,7 @@ a#logo {
   display:inline-block;
   line-height:50px;
   text-align:center;
-  background: rgba(255, 255, 255, 0.1);
+  background: #ffcc00;
   color: rgba(255,255,255,1);
   font-size:18px;
 }
