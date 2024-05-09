@@ -142,10 +142,10 @@ video {
 }
 
 .btn {
-  background: #fff;
-  color: #222;
+  background: #ffcc00;
+  color: #fff;
   text-align:center;
-  line-height:52px;
+  line-height:35px;
   padding:0 35px;
   border-radius: 0px;
   text-transform:uppercase;
@@ -154,9 +154,9 @@ video {
   border-radius: 10px;
 }
 .btn:hover, .btn:focus {
-  color:#fff;
+  color:#000;
   border-color:#fff;
-  background:none;
+  background:#fff;
 }
 .btn:focus {
   box-shadow:none;
