@@ -6,6 +6,11 @@ class ServiceModels(models.Model):
     content=models.TextField(max_length=150)
     iconClass=models.TextField(max_length=100)
 
+class AboutCards(models.Model):
+    iconClass=models.CharField(max_length=100)
+    numbers=models.IntegerField()
+    name=models.CharField(max_length=100)
+
 class QuoteModels(models.Model):
     image = models.ImageField(upload_to='Quoters/',null=True, blank=True)
     h5tag = models.CharField(max_length=50)

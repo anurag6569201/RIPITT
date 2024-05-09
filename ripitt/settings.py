@@ -137,6 +137,12 @@ MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+JAZZMIN_SETTINGS = {
+    'site_header':"RIPITT",
+    'site_brand':"RIPITT",
+    'site_logo':'assets/images/img/logo.png',
+    'copyright':"RIPITT.com",
+}
 
 
 # ckeditor

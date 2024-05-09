@@ -12,21 +12,13 @@
                                     <p>RIPITT Foundation, based in Bhubaneswar, is a leading educational research agency committed to driving positive change through innovative research, impactful partnerships, and data-driven strategies. Join us in shaping the future of education.</p>
                                 </div>
                                 <div class="facts-list owl-carousel">
+                                    {% for cards in aboutcards %}
                                     <div class="item animate" data-animate="fadeInUp">
                                         <div class="counter-box">
-                                            <i class="fa fa-trophy counter-icon" aria-hidden="true"></i><span class="count-number">32</span> Awards Won
+                                            <i class="{{ cards.iconClass }} counter-icon" aria-hidden="true"></i><span class="count-number">{{ cards.numbers }}</span> {{ cards.name }}
                                         </div>
                                     </div>
-                                    <div class="item animate" data-animate="fadeInUp">
-                                        <div class="counter-box">
-                                            <i class="fa fa-graduation-cap counter-icon" aria-hidden="true"></i><span class="count-number">4</span> Start-Up
-                                        </div>
-                                    </div>
-                                    <div class="item animate" data-animate="fadeInUp">
-                                        <div class="counter-box">
-                                            <i class="fa fa-desktop counter-icon" aria-hidden="true"></i><span class="count-number">12</span> Working Years
-                                        </div>
-                                    </div>
+                                    {% endfor %}
                                 </div>
                                 <br>
                                 <a href="{% url 'core:about' %}"><button class="btn">Know More</button></a>
