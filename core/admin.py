@@ -1,3 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+from core.models import ServiceModels,QuoteModels
+
+admin.site.register(ServiceModels)
+admin.site.register(QuoteModels)

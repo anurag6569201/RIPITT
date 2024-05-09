@@ -1,0 +1,65 @@
+{% extends 'core/index.html' %}
+{% load static %}
+
+{% block pages %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'assets/css/about.css' %}">
+<div class="section animated-row" data-section="slide02">
+    <div class="section-inner">
+        <div class="about-section">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 wide-col-laptop">
+                    <div class="row">
+                        <div class="col-md-12" style="text-align: left;">
+                            <h1 class="welcome-title animate" data-animate="fadeInUp">About Us</h1>
+                            <h5>Empowering education through research</h5>
+                        </div>
+                        <div class="col-md-12" style="text-align: left;">
+                            <p>RIPITT Foundation is a leading educational research agency based in Bhubaneswar. We are
+                                dedicated to empowering education through cutting-edge research, innovative solutions,
+                                and impactful collaborations. Our mission is to drive positive change in the education
+                                sector by providing valuable insights and data-driven strategies. At RIPITT Foundation,
+                                we are committed to shaping the future of education through knowledge and expertise.
+                                Join us in our journey to transform the educational landscape.</p>
+                        </div>
+                        <div class="col-md-12" style="text-align: left;">
+                            <p>RIPITT Foundation is a leading educational research agency based in Bhubaneswar. We are
+                                dedicated to empowering education through cutting-edge research, innovative solutions,
+                                and impactful collaborations. Our mission is to drive positive change in the education
+                                sector by providing valuable insights and data-driven strategies. At RIPITT Foundation,
+                                we are committed to shaping the future of education through knowledge and expertise.
+                                Join us in our journey to transform the educational landscape.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="container">
+                                <div class="row" style="justify-content: center;">
+                                    {% for quote in quoters %}
+                                    <div class="quote col-md-12 mb-4">
+                                        <div class="row">
+                                            <div class="col-md-3 quoteImage">
+                                                <figure class="about-img animate" style="margin: 0;" data-animate="fadeInUp"><img src="{{ quote.image.url }}" height="200px" width="150px" class="rounded" alt=""></figure>
+                                            </div>
+                                            <div class="col-md-9 quoteData">
+                                                <br>
+                                                <h5>{{ quote.h5tag }}</h5>
+                                                <p>{{ quote.paragraph1|safe }}</p>
+                                                <div class="quoteRegards">{{ quote.regards|safe }}</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock pages %}
