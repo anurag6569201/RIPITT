@@ -8,18 +8,6 @@
 }
 .quoteImage{
     padding: 0;
-    display: flex;
-    align-items: top;
-    justify-content: left;
-    position: relative;
-}
-.quoteImage .about-img{
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    -webkit-box-shadow:7px 8px 27px 6px #0c2c38;
-    -moz-box-shadow: 7px 8px 27px 6px #0c2c38;
-    box-shadow: 7px 8px 27px 6px #0c2c38;
 }
 .quoteData h5{
     text-decoration: underline;

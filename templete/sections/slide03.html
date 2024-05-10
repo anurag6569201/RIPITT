@@ -12,7 +12,7 @@
                     <div class="services-list row">
                         {% for service in services %}
                         <div class="col-md-4 mb-4">
-                            <a href="{% url 'core:services' %}">
+                            <a href="{% url 'core:services' id=service.pk %}">
                                 <div class="item animate" data-animate="fadeInUp">
                                     <div class="service-box">
                                         <span class="service-icon"><i class="{{service.iconClass}}" aria-hidden="true"></i></span>

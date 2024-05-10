@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from django.shortcuts import redirect
 
-from core.models import ServiceModels,QuoteModels,AboutCards
+from core.models import ServiceModels,QuoteModels,AboutCards,BreifServiceModels
+from django.shortcuts import get_object_or_404
 
 def index(request):
     return redirect("core:home")
@@ -15,8 +16,12 @@ def home(request):
     }
     return render(request,"calling/pages.html",context)
 
-def services(request):
-    return render(request,"calling/services.html")
+def services(request,id):
+    briefmodel = get_object_or_404(BreifServiceModels, pk=id)
+    context={
+        'briefmodel':briefmodel
+    }
+    return render(request,"calling/services.html",context)
 
 def about(request):
     quotes=QuoteModels.objects.all()
