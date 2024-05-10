@@ -420,6 +420,12 @@
 	.testimonial-content:before {
 		left: 45%;
 	}
+	.welcome-title{
+		padding-top: 4em;
+	}
+	.about-section .about-img{
+		margin-top: 1em;
+	}
 }
 @media only screen and (max-width: 320px) {
 	.gallery-overlay p {

@@ -22,3 +22,21 @@ class QuoteModels(models.Model):
     h5tag = models.CharField(max_length=50)
     paragraph1 = CKEditor5Field(config_name='extends')
     regards = CKEditor5Field(config_name='extends')
+
+class WorkModels(models.Model):
+    image = models.ImageField(upload_to='works/',null=True, blank=True)
+    prjName=models.CharField(max_length=100)
+    desc=models.TextField(max_length=250)
+
+class TestimonialModels(models.Model):
+    image = models.ImageField(upload_to='testimonial/',null=True, blank=True)
+    name=models.CharField(max_length=50)
+    text=models.TextField(max_length=200)
+    position=models.CharField(max_length=100)
+
+class ContactModels(models.Model):
+    email=models.CharField(max_length=100)
+    number=models.CharField(max_length=100)
+    location=models.CharField(max_length=100)
+    workingHrs=models.CharField(max_length=150)
+    workingweekend=models.CharField(max_length=150)

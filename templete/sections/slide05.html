@@ -9,105 +9,23 @@
                 </div>
                 <div class="gallery-section">
                     <div class="gallery-list owl-carousel">
+                        {% for work in workdone %}
                         <div class="item animate" data-animate="fadeInUp">
                             <div class="portfolio-item">
-                                <div class="thumb">
-                                    <img src="../../static/assets/images/item-1.jpg" alt="">
+                                <div class="thumb" style="display: flex;align-items: center;justify-content: center;">
+                                    <img src="{{ work.image.url }}" alt="Sample Image 1" style="object-fit: cover;">
                                 </div>
                                 <div class="thumb-inner animate" data-animate="fadeInUp">
-                                    <h4>templatemo is the best</h4>
-                                    <p>Please tell your friends about it. Templatemo is the best website to download free Bootstrap CSS templates.</p>
+                                    <h4>{{ work.prjName }}</h4>
+                                    <p>{{ work.desc|safe }}</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="item animate" data-animate="fadeInUp">
-                            <div class="portfolio-item">
-                                <div class="thumb">
-                                    <img src="../../static/assets/images/item-2.jpg" alt="">
-                                </div>
-                                <div class="thumb-inner animate" data-animate="fadeInUp">
-                                    <h4>templatemo is the best</h4>
-                                    <p>Please tell your friends about it. Templatemo is the best website to download free Bootstrap themes.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item animate" data-animate="fadeInUp">
-                            <div class="portfolio-item">
-                                <div class="thumb">
-                                    <img src="../../static/assets/images/item-3.jpg" alt="">
-                                </div>
-                                <div class="thumb-inner animate" data-animate="fadeInUp">
-                                    <h4>templatemo is the best</h4>
-                                    <p>Please tell your friends about it. Templatemo is the best website to download free Bootstrap layouts.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item animate" data-animate="fadeInUp">
-                            <div class="portfolio-item">
-                                <div class="thumb">
-                                    <img src="../../static/assets/images/item-1.jpg" alt="">
-                                </div>
-                                <div class="thumb-inner animate" data-animate="fadeInUp">
-                                    <h4>templatemo is the best</h4>
-                                    <p>Please tell your friends about it. Templatemo is the best website to download free Bootstrap templates.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item animate" data-animate="fadeInUp">
-                            <div class="portfolio-item">
-                                <div class="thumb">
-                                    <img src="../../static/assets/images/item-2.jpg" alt="">
-                                </div>
-                                <div class="thumb-inner animate" data-animate="fadeInUp">
-                                    <h4>templatemo is the best</h4>
-                                    <p>Please tell your friends about it. Templatemo is the best website to download Bootstrap CSS templates.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item animate" data-animate="fadeInUp">
-                            <div class="portfolio-item">
-                                <div class="thumb">
-                                    <img src="../../static/assets/images/item-3.jpg" alt="">
-                                </div>
-                                <div class="thumb-inner animate" data-animate="fadeInUp">
-                                    <h4>templatemo is the best</h4>
-                                    <p>Please tell your friends about it. Templatemo is the best website to download free Bootstrap templates.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item animate" data-animate="fadeInUp">
-                            <div class="portfolio-item">
-                                <div class="thumb">
-                                    <img src="../../static/assets/images/item-1.jpg" alt="">
-                                </div>
-                                <div class="thumb-inner animate" data-animate="fadeInUp">
-                                    <h4>templatemo is the best</h4>
-                                    <p>Please tell your friends about it. Templatemo is the best website to download free Bootstrap templates.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item animate" data-animate="fadeInUp">
-                            <div class="portfolio-item">
-                                <div class="thumb">
-                                    <img src="../../static/assets/images/item-2.jpg" alt="">
-                                </div>
-                                <div class="thumb-inner animate" data-animate="fadeInUp">
-                                    <h4>templatemo is the best</h4>
-                                    <p>Please tell your friends about it. Templatemo is the best website to download free Bootstrap templates.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item animate" data-animate="fadeInUp">
-                            <div class="portfolio-item">
-                                <div class="thumb">
-                                    <img src="../../static/assets/images/item-3.jpg" alt="">
-                                </div>
-                                <div class="thumb-inner animate" data-animate="fadeInUp">
-                                    <h4>templatemo is the best</h4>
-                                    <p>Please tell your friends about it. Templatemo is the best website to download free Bootstrap templates.</p>
-                                </div>
-                            </div>
-                        </div>
+                        {% endfor %}
+                    </div>
+                    <br>
+                    <div class="col-md-12" style="display: flex;align-items: center;justify-content: left;">
+                        <a href="{% url 'core:construction' %}"><button class="btn">View All</button></a>
                     </div>
                 </div>
             </div>

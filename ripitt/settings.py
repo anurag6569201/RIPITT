@@ -73,6 +73,9 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+
+                # custom
+                'core.context_process.contactview',
             ],
         },
     },
@@ -141,7 +144,7 @@ JAZZMIN_SETTINGS = {
     'site_header':"RIPITT",
     'site_brand':"RIPITT",
     'site_logo':'assets/images/img/logo.png',
-    'copyright':"RIPITT.com",
+    'copyright':"ripitt.com",
 }
 
 
