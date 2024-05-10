@@ -454,6 +454,9 @@
 	.serviceEntry{
 		flex-direction: column;
 	}
+	video {
+		left: 0;
+	}
 }
 @media only screen and (max-width: 320px) {
 	.gallery-overlay p {
