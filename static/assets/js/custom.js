@@ -53,25 +53,29 @@
                 dots: true,
                 items: 3,
                 margin: 30,
-                autoplay: true,
+                autoplay: false,
                 smartSpeed: 700,
                 autoplayTimeout: 6000,
                 responsive: {
                     0: {
                         items: 1,
-                        margin: 0
+                        margin: 0,
+                        startPosition: 0
                     },
                     460: {
                         items: 1,
-                        margin: 0
+                        margin: 0,
+                        startPosition: 0
                     },
                     576: {
                         items: 2,
-                        margin: 20
+                        margin: 20,
+                        startPosition: 0
                     },
                     992: {
                         items: 3,
-                        margin: 30
+                        margin: 30,
+                        startPosition: 0
                     }
                 }
             });
@@ -108,7 +112,7 @@
         // }
         if ($('.gallery-list').length) {
             $('.gallery-list').owlCarousel({
-                loop: false,
+                loop: true,
                 nav: false,
                 dots: true,
                 items: 3,
