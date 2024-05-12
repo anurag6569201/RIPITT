@@ -1,5 +1,11 @@
 {% load static %}
 
+<style>
+.navbar-nav li a:hover:after, .navbar-nav li.makecolor a:after{
+  -webkit-transform:scale(1);
+  transform:scale(1);
+}
+</style>
 <div class="preloader">
     <div class="preloader-bounce">
         <span></span>
@@ -19,13 +25,13 @@
                     <button type="button" class="navbar-toggle"> <i class="fa fa-bars"></i> </button>
                     <div class="nav-box navbar-collapse">
                         <ul class="navigation-menu nav navbar-nav navbars" id="nav">
-                            <li data-menuanchor="slide01" class="{% if '/home/' in request.path %}active{% endif %}"><a href="#slide01">Home</a></li>
-                            <li data-menuanchor="slide02"><a href="#slide02">About Me</a></li>
-                            <li data-menuanchor="slide03" class="{% if '/services/' in request.path %}active{% endif %}"><a href="#slide03" >Services</a></li>
-                            <li data-menuanchor="slide04"><a href="#slide04">Apply</a></li>
-                            <li data-menuanchor="slide05"><a href="#slide05">Our Work</a></li>
-                            <li data-menuanchor="slide06"><a href="#slide06">Testimonials</a></li>
-                            <li data-menuanchor="slide07"><a href="#slide07">Contact Me</a></li>
+                            <li {% if '/home/' in request.path or '/home/' in request.path %}data-menuanchor="slide01"{% endif %}><a href="{% url 'core:home' %}#slide01">Home</a></li>
+                            <li {% if '/home/' in request.path or '/about/' in request.path %}data-menuanchor="slide02"{% endif %} class="{% if '/about/' in request.path %}makecolor{% endif %}"><a href="{% url 'core:home' %}#slide02">About Me</a></li>
+                            <li {% if '/home/' in request.path or '/services/' in request.path %}data-menuanchor="slide03"{% endif %} class="{% if '/services/' in request.path %}makecolor{% endif %}"><a href="{% url 'core:home' %}#slide03" >Services</a></li>
+                            <li {% if '/home/' in request.path or '/apply/' in request.path %}data-menuanchor="slide04"{% endif %} class="{% if '/apply/' in request.path %}makecolor{% endif %}"><a href="{% url 'core:home' %}#slide04">Apply</a></li>
+                            <li {% if '/home/' in request.path or '/work/' in request.path %}data-menuanchor="slide05"{% endif %} class="{% if '/work/' in request.path %}makecolor{% endif %}"><a href="{% url 'core:home' %}#slide05">Our Work</a></li>
+                            <li {% if '/home/' in request.path or '/testimonials/' in request.path %}data-menuanchor="slide06"{% endif %} class="{% if '/testimonials/' in request.path %}makecolor{% endif %}"><a href="{% url 'core:home' %}#slide06">Testimonials</a></li>
+                            <li {% if '/home/' in request.path or '/contact/' in request.path %}data-menuanchor="slide07"{% endif %} class="{% if '/contact/' in request.path %}makecolor{% endif %}"><a href="{% url 'core:home' %}#slide07">Contact Me</a></li>
                         </ul>
                     </div>
                 </nav>
