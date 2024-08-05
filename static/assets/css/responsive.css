@@ -194,6 +194,12 @@
 	}
 }
 @media only screen and (max-width: 767px) {
+	.main-image-title-text{
+		display: block;
+	}
+	.main-image-title{
+		display: none;
+	}
 	#header {
 		position: fixed;
 		top: 0;
