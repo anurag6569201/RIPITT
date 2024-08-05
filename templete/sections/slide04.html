@@ -3,11 +3,11 @@
     <div class="section-inner">
         <div class="row justify-content-center">
             <div class="col-md-8 wide-col-laptop">
-                <div class="title-block animate" data-animate="fadeInUp">
+                <div class="title-block animate mt-5" data-animate="fadeInUp">
                     <h2>Wanted To Apply?</h2>
                 </div>
                 <div class="row">
-                    <div class="col-md-8" style="text-align: left;">
+                    <div class="col-md-6 animate" style="text-align: left;" data-animate="fadeInUp">
                         <h3>RIPITT Executive body Program Form</h3>
                         <p style="text-align: left;">RIPITT is excited to introduce the launch of the Executive body Program, which offers the opportunity to join our mission of enabling individuals with ownership and contributing to the advancement of Startup Ecosystem in India.</p>
                         <h6>Our values</h6>
@@ -17,14 +17,14 @@
                             <li>We take ownership of our actions</li>
                             <li>We maintain an open approach</li>
                         </ul>
+                        <div class="col-md-12" style="display: flex;align-items: center;justify-content: left;gap: 10px;">
+                            <a href="{% url 'core:construction' %}"><button class="btn">Know More</button></a>
+                            <a href="{% url 'core:construction' %}"><button class="btn">Apply Now</button></a>
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                        <img height="300px" src="../../static/assets/images/img/bodyprg.png" alt="">
+                    <div class="col-md-6">
+                        <figure class="about-img animate" data-animate="fadeInUp"><img style="max-height: 400px;" src="../../static/assets/images/img/bodyprg.jpeg" class="rounded" alt=""></figure>
                     </div>
-                </div>
-                <div class="col-md-12" style="display: flex;align-items: center;justify-content: left;gap: 10px;">
-                    <a href="{% url 'core:construction' %}"><button class="btn">Know More</button></a>
-                    <a href="{% url 'core:construction' %}"><button class="btn">Apply Now</button></a>
                 </div>
             </div>
         </div>
