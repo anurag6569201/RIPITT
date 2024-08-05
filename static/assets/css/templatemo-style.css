@@ -9,6 +9,8 @@ body {
   -ms-font-smoothing: antialiased;
   font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  scroll-padding: 20px;
 }
 body {
   font: 16px/1.6 'Raleway', Arial, Helvetica, sans-serif;
@@ -293,6 +295,10 @@ a#logo {
   align-items: center;
   justify-content: center;
   color: #ffcc00;
+}
+#header #logo{
+  display: flex;
+  align-items: flex-end;
 }
 .navbar {
   padding: 0;
