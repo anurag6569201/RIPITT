@@ -8,6 +8,8 @@ urlpatterns = [
     path('home/', views.home,name="home"),
     path('services/<int:id>/', views.services, name="services"),
     path('about/',views.about,name="about"),
+    path('team/',views.team,name="team"),
+    path('apply/',views.apply,name="apply"),
 
     # demo pages
     path('construction/',views.construction,name="construction"),

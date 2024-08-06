@@ -2,7 +2,23 @@
 {% load static %}
 
 {% block pages %}
-
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+    th {
+        background-color: transparent;
+    }
+    td {
+        vertical-align: top;
+    }
+</style>
 <link rel="stylesheet" type="text/css" href="{% static 'assets/css/about.css' %}">
 <div class="section animated-row" data-section="slide02">
     <div class="section-inner">
@@ -11,38 +27,154 @@
                 <div class="col-lg-8 wide-col-laptop">
                     <div class="row">
                         <div class="col-md-12" style="text-align: left;">
-                            <h1 class="welcome-title animate" data-animate="fadeInUp">About Us</h1>
-                            <h5>Empowering education through research</h5>
+                            <h5 data-animate="fadeInUp">About Us</h5>
                         </div>
                         <div class="col-md-12" style="text-align: left;">
-                            <p><br>RIPITT Foundation stands as a beacon of innovation and progress in the realm of education. With a steadfast commitment to driving positive change, RIPITT empowers education through cutting-edge research, strategic collaborations, and transformative solutions. Founded on the principles of excellence and impact, RIPITT serves as a catalyst for the transformation of the educational landscape.  <br><br>Guided by a vision to unlock the full potential of students and educators alike, RIPITT fosters an environment of creativity, innovation, and academic excellence. Through interdisciplinary collaboration, state-of-the-art technologies, and a dedication to ethical practices, RIPITT is at the forefront of shaping the future of learning. <br><br>Join us in our mission to revolutionize education and make a lasting impact on generations to come.</p>
+                            <p>
+                                RIPITT Foundation is a Section 8 company established at IIIT Bhubaneswar, dedicated to enhancing research, innovation, projects, incubation, and technology transfer. As a Section 8 company under the Companies Act, 2013, we are recognized as a non-profit organization committed to promoting science, education, research, social welfare, and similar objectives. Our mission is to leverage the academic and research strengths of IIIT Bhubaneswar to address real-world challenges and support the growth of startups and entrepreneurial ventures.
+                            </p>
+                            <h5 class="mt-5">Our Objectives</h5>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Category</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><b>Innovative Solutions:</b></td>
+                                        <td>Develop cutting-edge solutions for real-world problems, enhancing industry standards and societal well-being.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Incubation Ecosystem:</b></td>
+                                        <td>Establish a robust incubation environment that supports and accelerates the development of startups from ideation to market entry.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Startup Support:</b></td>
+                                        <td>Provide startups with essential tools, mentorship, and resources to transform innovative ideas into successful businesses.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Entrepreneurial Environment:</b></td>
+                                        <td>Create a supportive ecosystem for new businesses and entrepreneurs, offering comprehensive support to student entrepreneurs.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Interdisciplinary Collaboration:</b></td>
+                                        <td>Promote collaboration across various fields of study, focusing on new solutions and technology improvements.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Consultancy Services:</b></td>
+                                        <td>Offer specialized consultancy to businesses and public sector projects, leveraging advanced research capabilities to address specific industry problems.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Knowledge Dissemination:</b></td>
+                                        <td>Organize workshops, seminars, and conferences to disseminate knowledge and bridge the gap between academic research and industry needs.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Exhibit Progress:</b></td>
+                                        <td>Annually showcase the progress and outcomes of research projects, highlighting practical implementations and advancements.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>State-of-the-Art Facilities:</b></td>
+                                        <td>Facilitate access to cutting-edge facilities and resources for researchers.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Technology Transfer:</b></td>
+                                        <td>Facilitate the transition of breakthrough innovations from the research lab to market applications through strategic technology transfer agreements.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Intellectual Property:</b></td>
+                                        <td>Support the creation and protection of intellectual property.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Industry and Academic Partnerships:</b></td>
+                                        <td>Cultivate partnerships with industry leaders and academic institutions.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Sustainable Technologies:</b></td>
+                                        <td>Drive initiatives for sustainable and eco-friendly technologies.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Skill Development:</b></td>
+                                        <td>Enhance skill development through mentorship and training programs.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Community Outreach:</b></td>
+                                        <td>Engage in community outreach programs to promote science and technology awareness.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Global Collaboration:</b></td>
+                                        <td>Establish a platform for global research collaboration.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Ethical Practices:</b></td>
+                                        <td>Prioritize ethical considerations and responsible research practices.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Data-Driven Research:</b></td>
+                                        <td>Implement data-driven approaches for research and innovation.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Student Research:</b></td>
+                                        <td>Encourage student-led research projects and initiatives.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Digital Technologies:</b></td>
+                                        <td>Explore new frontiers in AI, IoT, robotics, and other digital technologies.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Practical Solutions:</b></td>
+                                        <td>Transform innovative ideas into practical solutions with societal impact.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Pioneering Research:</b></td>
+                                        <td>Promote pioneering research in state-of-the-art technologies.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>National Contribution:</b></td>
+                                        <td>Contribute to the national goal of making India a global leader in science and technology.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Environmental Conservation:</b></td>
+                                        <td>Leverage research for environmental conservation and sustainable development, aligning with national and state priorities.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Healthcare Innovation:</b></td>
+                                        <td>Enhance healthcare outcomes through medical research and innovation.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Government Digitization:</b></td>
+                                        <td>Assist in the digitization efforts of government services by developing and implementing relevant technologies.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Youth Participation:</b></td>
+                                        <td>Encourage youth participation in research, aligning with national educational goals and policies.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>High-Impact Publications:</b></td>
+                                        <td>Aim to produce high-impact publications and secure patents that showcase leading-edge research.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>ML and Big Data:</b></td>
+                                        <td>Spearhead innovative ML algorithms and utilize big data analytics to address complex societal challenges and inform decision-making processes.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Software Development:</b></td>
+                                        <td>Design and develop robust software systems that streamline operations and introduce efficiencies in organizational workflows.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>User-Centric Applications:</b></td>
+                                        <td>Foster the creation of user-centric applications that address real-world needs, improving accessibility and user engagement.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Tangible Projects:</b></td>
+                                        <td>Translate theoretical research into tangible projects, emphasizing practical applications that can be adopted by industry and society for immediate impact.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                     <br>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="container">
-                                <div class="row" style="justify-content: center;">
-                                    {% for quote in quoters %}
-                                    <div class="quote col-md-12 mb-4">
-                                        <div class="row">
-                                            <div class="col-md-3 quoteImage">
-                                                <br>
-                                                <figure class="about-img animate" style="margin:0;display: flex;justify-content: center;" data-animate="fadeInUp"><img src="{{ quote.image.url }}" height="250px" width="190px" class="rounded" alt=""></figure>
-                                            </div>
-                                            <div class="col-md-9 quoteData">
-                                                <br>
-                                                <h5>{{ quote.h5tag }}</h5>
-                                                <p>{{ quote.paragraph1|safe }}</p>
-                                                <div class="quoteRegards">{{ quote.regards|safe }}</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {% endfor %}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
             </div>

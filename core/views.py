@@ -34,6 +34,13 @@ def about(request):
     }
     return render(request,"calling/about.html",context)
 
+def team(request):
+    return render(request,"calling/team.html")
+
+
+def apply(request):
+    return render(request,"calling/apply.html")
+
 
 def construction(request):
     return render(request,"calling/construction.html")

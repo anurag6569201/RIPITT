@@ -19,3 +19,6 @@
     padding: 0;
     margin: 0;
 }
+.about-section li ul li{
+    list-style: none;
+}

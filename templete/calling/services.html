@@ -7,15 +7,8 @@
         <div class="row justify-content-center">
             <div class="col-md-8 wide-col-laptop mb-4">
                 <div style="text-align: left;justify-content: center;align-items: center;">
-                    <div class="col-md-12 serviceEntry" style="padding: 0;align-items: end;justify-content: center;display: flex;">
-                        <div class="col-md-3 col-12">
-                            <img src="{{ briefmodel.image.url }}" max-height="200px" width="auto" alt="">
-                        </div>
-                        <div class="title-block animate col-md-9 col-12" data-animate="fadeInUp">
-                            <h2>{{ briefmodel.topic }}</h2>
-                        </div>
-                    </div>
-                    <div class="col-md-12 datacard">
+                            <h3>{{ briefmodel.topic }}</h3>
+                    <div class="col-md-12">
                         <div>{{ briefmodel.content|safe }}</div>
                     </div>
                 </div>
