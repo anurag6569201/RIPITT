@@ -146,7 +146,7 @@ video {
 }
 
 .btn {
-  background: #ffcc00;
+  background: #2d9ba5;
   color: #fff;
   text-align:center;
   line-height:35px;
@@ -279,9 +279,6 @@ video {
 .spacer{
   height: 15vh;
 }
-.main-image-title-text{
-  display: none;
-}
 #header {
   padding:7px 0;
   position: fixed;
@@ -295,14 +292,13 @@ video {
   padding:0 20px;
 }
 a#logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
   text-decoration: none;
-  font-size: 32px;
-  text-transform: uppercase;
-  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffcc00;
 }
 #header #logo{
   display: flex;
@@ -310,7 +306,11 @@ a#logo {
 }
 .navbar {
   padding: 0;
+  position: relative;
+  display: flex;
+  justify-content: right;
 }
+
 .navbar-toggle {
   display:none;
 }
@@ -334,7 +334,7 @@ a#logo {
   content:'';
   display:block;
   height: 2px;
-  background:#ffcc00;
+  background:#2d9ba5;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   -webkit-transform:scale(0);
@@ -381,7 +381,7 @@ a#logo {
   display:inline-block;
   line-height:50px;
   text-align:center;
-  background: #ffcc00;
+  background: #2d9ba5;
   color: rgba(255,255,255,1);
   font-size:18px;
 }
@@ -420,13 +420,33 @@ a#logo {
   justify-content: left;
 }
 .welcome-title span {
-  font-size:36px;
+  font-size:1em;
   display:block;
-  font-weight:300;
+  font-weight:700;
   line-height:1.2;
+}
+.title-container {
+  display: flex;
+  align-items: center;
+}
+
+.main-image-title {
+  height: 1em; 
+  width: auto; 
+}
+.welcome-title {
+  font-size: 2em; 
+}
+
+.welcome-main-title{
+  font-size: 0px;
 }
 .welcome-box .btn {
   margin-top: 10px;
+}
+.main-image-title-text{
+  display: none !important;
+  font-size: 1em;
 }
 .next-section {
   display: inline-block;
@@ -455,11 +475,6 @@ a#logo {
 .about-img {
   margin: 0 auto 40px;
   position:relative;
-}
-.about-img img {
-  border-radius: 10px;
-  -webkit-box-shadow: 0 0 40px rgba(0,0,0,.3);
-  box-shadow: 0 0 40px rgba(0,0,0,.3);
 }
 .about-contentbox {
   margin-top: 80px;

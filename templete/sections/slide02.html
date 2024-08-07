@@ -8,25 +8,15 @@
                         <div class="col-md-6">
                             <div class="about-contentbox">
                                 <div class="animate mt-5" data-animate="fadeInUp">
-                                    <h2>Who are we?<br><span>EDUCATIONAL RESEARCH AGENCY</span></h2>
+                                    <h2>Who are we?</h2>
                                     <p>RIPITT Foundation is a Section 8 company established at IIIT Bhubaneswar, dedicated to enhancing research, innovation, projects, incubation, and technology transfer. As a Section 8 company under the Companies Act, 2013, we are recognized as a non-profit organization committed to promoting science, education, research, social welfare, and similar objectives. Our mission is to leverage the academic and research strengths of IIIT Bhubaneswar to address real-world challenges and support the growth of startups and entrepreneurial ventures.</p>
-                                </div>
-                                <div class="facts-list owl-carousel">
-                                    {% for cards in aboutcards %}
-                                    <div class="item animate" data-animate="fadeInUp">
-                                        <div class="counter-box">
-                                            <i class="{{ cards.iconClass }} counter-icon" aria-hidden="true"></i><span class="count-number">{{ cards.numbers }}</span> {{ cards.name }}
-                                        </div>
-                                    </div>
-                                    {% endfor %}
                                 </div>
                                 <br>
                                 <a href="{% url 'core:about' %}"><button class="btn">Know More</button></a>
-                                <a href="{% url 'core:team' %}"><button class="btn">Our Team</button></a>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <figure class="about-img animate" data-animate="fadeInUp"><img style="max-height: 400px;" src="../../static/assets/images/profile-girl.jpg" class="rounded" alt=""></figure>
+                            <figure class="about-img animate" data-animate="fadeInUp"><img style="max-height: 400px;" src="../../static/assets/images/growth.svg" class="rounded" alt=""></figure>
                         </div>
                     </div>
                 </div>
