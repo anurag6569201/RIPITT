@@ -1,30 +1,22 @@
 {% load static %}
-<div class="section animated-row" data-section="slide04">
+<div class="section animated-row" data-section="slide02">
     <div class="section-inner">
-        <div class="row justify-content-center">
-            <div class="col-md-8 wide-col-laptop">
-                <div class="title-block animate mt-5" data-animate="fadeInUp">
-                    <h2>Wanted To Apply?</h2>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 animate" style="text-align: left;" data-animate="fadeInUp">
-                        <h3>RIPITT Executive body Program Form</h3>
-                        <p style="text-align: left;">RIPITT is excited to introduce the launch of the Executive body Program, which offers the opportunity to join our mission of enabling individuals with ownership and contributing to the advancement of Startup Ecosystem in India.</p>
-                        <h6>Our values</h6>
-                        <ul>
-                            <li>We exhibit humility</li>
-                            <li>We conduct ourselves with integrity</li>
-                            <li>We take ownership of our actions</li>
-                            <li>We maintain an open approach</li>
-                        </ul>
-                        <div class="col-md-12" style="padding: 0;">
-                            <a href="{% url 'core:apply' %}"><button class="btn">Apply Now</button></a>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <figure class="about-img animate" data-animate="fadeInUp"><img style="max-height: 400px;" class="mt-3" src="../../static/assets/images/img/bodyprg.jpeg" class="rounded" alt=""></figure>
-                    </div>
-                </div>
+        <div class="row">
+            <div class="col-md-6">
+                <header class="header" style="text-align: left;">
+                    <h1>Meet Our People</h1>
+                    <p>We are proud to introduce our leadership team People:</p>
+                    <ul>
+                        <li><b>Director of IIIT Bhubaneswar:</b> Ashish Ghosh</li>
+                        <li><b>Registrar:</b> Debasis Jena</li>
+                        <li><b>Head of CSE and CEO of RIPITT: </b>Sanjay Saxena</li>
+                    </ul>
+                    <p>These dedicated professionals are at the forefront of innovation and excellence at the RIPITT Foundation.</p>
+                    <a href="{% url 'core:about' %}"><button class="btn">View People</button></a>
+                </header>
+            </div>
+            <div class="col-md-6">
+                <img height="400px" src="../../static/assets/images/team.svg" alt="">
             </div>
         </div>
     </div>
