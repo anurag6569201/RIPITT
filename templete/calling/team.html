@@ -60,13 +60,21 @@ blockquote:after {
 }
 .mentors-card {
     display: flex;
-    gap: 5px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 10px;
 }
-.mentors-about p{
+.mentors-about{
+    width: 60%;
     text-align: left;
+    font-weight: 700;
+}
+.mentor-website{
+    font-weight: 600;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+.mentors-card:hover .mentor-website{
+    color: #444;
 }
 </style>
 <div class="section animated-row" data-section="slide02">
@@ -128,78 +136,21 @@ blockquote:after {
             </div>
             <div class="row">
                 <h3 class="mt-5 col-md-12" style="text-decoration: underline;text-align: left;">Mentors</h3>
-                    <div class="col-md-4 mb-4">
-                        <div class="card-wrapper-directors mentors-card">
-                            <img class="card-board-directors" src="../../static/assets/images/team/sanjay.jpg" alt="">
+                {% for mentor in mentors %}
+                    <div class="col-md-6 mb-4">
+                        <div class="card-wrapper-directors mentors-card h-100">
+                            <div>
+                                <img width="150px" height="150px" class="card-board-directors" src="{{mentor.image.url}}" alt="">
+                            </div>
                             <div class="mentors-about">
-                                <p><h6>Dr. Sanjay Saxena</h6><b>Expertise:Research</b></p>
+                                <h4>{{mentor.name}}</h4>
+                                <p style="margin-top: 0;"><b>Expertise: </b>{{mentor.expertise}} <br>
+                                    <a class="mentor-website" href="{{mentor.website}}">Visit Webpage</a>
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card-wrapper-directors mentors-card">
-                            <img class="card-board-directors" src="../../static/assets/images/team/sanjay.jpg" alt="">
-                            <div class="mentors-about">
-                                <p><h6>Dr. Sanjay Saxena</h6><b>Expertise:Research</b></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card-wrapper-directors mentors-card">
-                            <img class="card-board-directors" src="../../static/assets/images/team/sanjay.jpg" alt="">
-                            <div class="mentors-about">
-                                <p><h6>Dr. Sanjay Saxena</h6><b>Expertise:Research</b></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card-wrapper-directors mentors-card">
-                            <img class="card-board-directors" src="../../static/assets/images/team/sanjay.jpg" alt="">
-                            <div class="mentors-about">
-                                <p><h6>Dr. Sanjay Saxena</h6><b>Expertise:Research</b></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card-wrapper-directors mentors-card">
-                            <img class="card-board-directors" src="../../static/assets/images/team/sanjay.jpg" alt="">
-                            <div class="mentors-about">
-                                <p><h6>Dr. Sanjay Saxena</h6><b>Expertise:Research</b></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card-wrapper-directors mentors-card">
-                            <img class="card-board-directors" src="../../static/assets/images/team/sanjay.jpg" alt="">
-                            <div class="mentors-about">
-                                <p><h6>Dr. Sanjay Saxena</h6><b>Expertise:Research</b></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card-wrapper-directors mentors-card">
-                            <img class="card-board-directors" src="../../static/assets/images/team/sanjay.jpg" alt="">
-                            <div class="mentors-about">
-                                <p><h6>Dr. Sanjay Saxena</h6><b>Expertise:Research</b></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card-wrapper-directors mentors-card">
-                            <img class="card-board-directors" src="../../static/assets/images/team/sanjay.jpg" alt="">
-                            <div class="mentors-about">
-                                <p><h6>Dr. Sanjay Saxena</h6><b>Expertise:Research</b></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card-wrapper-directors mentors-card">
-                            <img class="card-board-directors" src="../../static/assets/images/team/sanjay.jpg" alt="">
-                            <div class="mentors-about">
-                                <p><h6>Dr. Sanjay Saxena</h6><b>Expertise:Research</b></p>
-                            </div>
-                        </div>
-                    </div>
+                {% endfor %}
             </div>
         </div>
     </div>

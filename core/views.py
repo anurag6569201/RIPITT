@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.shortcuts import redirect
 
-from core.models import ServiceModels,QuoteModels,AboutCards,BreifServiceModels,WorkModels,TestimonialModels
+from core.models import *
 from django.shortcuts import get_object_or_404
 
 def index(request):
@@ -9,13 +9,9 @@ def index(request):
 
 def home(request):
     testimonial=TestimonialModels.objects.all()
-    work=WorkModels.objects.all()
-    cards=AboutCards.objects.all()
     service=ServiceModels.objects.all()
     context={
         'services':service,
-        'aboutcards':cards,
-        'workdone':work,
         'testimonial':testimonial,
     }
     return render(request,"calling/pages.html",context)
@@ -28,14 +24,17 @@ def services(request,id):
     return render(request,"calling/services.html",context)
 
 def about(request):
-    quotes=QuoteModels.objects.all()
     context={
-        'quoters':quotes,
+
     }
     return render(request,"calling/about.html",context)
 
 def team(request):
-    return render(request,"calling/team.html")
+    mentors=mentorsModels.objects.all()
+    context={
+       'mentors':mentors,
+    }
+    return render(request,"calling/team.html",context)
 
 def event(request):
     return render(request,"calling/event.html")

@@ -279,6 +279,9 @@ video {
 .spacer{
   height: 15vh;
 }
+.mobile-nav{
+  display: none;
+}
 #header {
   padding:7px 0;
   position: fixed;

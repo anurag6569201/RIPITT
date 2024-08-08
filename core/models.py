@@ -12,22 +12,6 @@ class ServiceModels(models.Model):
     iconClass = models.TextField(max_length=100)
     briefModel = models.ForeignKey(BreifServiceModels, on_delete=models.CASCADE)
 
-class AboutCards(models.Model):
-    iconClass=models.CharField(max_length=100)
-    numbers=models.IntegerField()
-    name=models.CharField(max_length=100)
-
-class QuoteModels(models.Model):
-    image = models.ImageField(upload_to='Quoters/',null=True, blank=True)
-    h5tag = models.CharField(max_length=50)
-    paragraph1 = CKEditor5Field(config_name='extends')
-    regards = CKEditor5Field(config_name='extends')
-
-class WorkModels(models.Model):
-    image = models.ImageField(upload_to='works/',null=True, blank=True)
-    prjName=models.CharField(max_length=100)
-    desc=models.TextField(max_length=250)
-
 class TestimonialModels(models.Model):
     image = models.ImageField(upload_to='testimonial/',null=True, blank=True)
     name=models.CharField(max_length=50)
@@ -40,3 +24,9 @@ class ContactModels(models.Model):
     location=models.CharField(max_length=100)
     workingHrs=models.CharField(max_length=150)
     workingweekend=models.CharField(max_length=150)
+
+class mentorsModels(models.Model):
+    image = models.ImageField(upload_to='mentors/',null=True, blank=True)
+    name=models.CharField(max_length=80)
+    expertise=models.CharField(max_length=150)
+    website=models.CharField(max_length=200)

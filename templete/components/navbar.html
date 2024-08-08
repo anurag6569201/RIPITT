@@ -14,7 +14,7 @@
     </div>
 </div>
 
-<header id="header">
+<header id="header" class="laptop-nav">
     <div class="container-fluid">
         <div class="navbar">
             <a href="#" id="logo" title="RIPITT">
@@ -35,6 +35,50 @@
                         </ul>
                     </div>
                 </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<header class="mobile-nav" id="header">
+    <div class="container-fluid" style="padding: 0;">
+        <div class="navbar" style="padding: 0;">
+            <a href="#" id="logo" title="RIPITT">
+                <img src="../../static/assets/images/img/logo.png" alt="" height="80px">
+            </a>
+            <div class='wrapper'>
+                <div class='app'>
+                    <div class='nav' id="main-nav-back">
+                        <div class='nav-bar'>
+                            <div class='logo'></div>
+                            <div class='nav-btn' id="nav-button">
+                                <div class='btn-bar menu'></div>
+                                <div class='btn-bar menu'></div>
+                                <div class='btn-bar menu'></div>
+                                <div class='btn-bar close'></div>
+                                <div class='btn-bar close'></div>
+                            </div>
+                        </div>
+                        <div class='nav-content'>
+                            <div class="mobile-nav-links">
+                                <ul class="mobile-ul-links">
+                                    <li {% if '/home/' in request.path or '/home/' in request.path %}data-menuanchor="slide01"{% endif %}><a href="{% url 'core:home' %}#slide01">Home</a></li>
+                                    <li {% if '/home/' in request.path or '/about/' in request.path %}data-menuanchor="slide02"{% endif %} class="{% if '/about/' in request.path %}makecolor{% endif %}"><a href="{% url 'core:home' %}#slide02">About Us</a></li>
+                                    <li {% if '/home/' in request.path or '/services/' in request.path %}data-menuanchor="slide03"{% endif %} class="{% if '/services/' in request.path %}makecolor{% endif %}"><a href="{% url 'core:home' %}#slide03">Services</a></li>
+                                    <li {% if '/home/' in request.path or '/people/' in request.path %}data-menuanchor="slide04"{% endif %} class="{% if '/team/' in request.path %}makecolor{% endif %}"><a href="{% url 'core:home' %}#slide04">People</a></li>
+                                    <li {% if '/home/' in request.path or '/event/' in request.path %}data-menuanchor="slide05"{% endif %} class="{% if '/event/' in request.path %}makecolor{% endif %}"><a href="{% url 'core:home' %}#slide05">Events</a></li>
+                                    <li {% if '/home/' in request.path or '/testimonials/' in request.path %}data-menuanchor="slide06"{% endif %} class="{% if '/testimonials/' in request.path %}makecolor{% endif %}"><a href="{% url 'core:home' %}#slide06">Testimonials</a></li>
+                                    <li {% if '/home/' in request.path or '/contact/' in request.path %}data-menuanchor="slide07"{% endif %} class="{% if '/contact/' in request.path %}makecolor{% endif %}"><a href="{% url 'core:home' %}#slide07">Contact Me</a></li>
+                                </ul>
+                            </div>
+                            <div class='background'>
+                                <div class='portion'></div>
+                                <div class='portion'></div>
+                                <div class='portion'></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
