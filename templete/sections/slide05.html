@@ -2,33 +2,7 @@
 <div class="section animated-row" data-section="slide06">
     <div class="section-inner">
         <div class="row justify-content-center">
-            <div class="col-md-8 wide-col-laptop">
-                <div class="title-block animate mt-5" data-animate="fadeInUp">
-                    <h2>what we’ve done?</h2>
-                    <p>Our achievements speak volumes about our dedication to excellence. From pioneering research initiatives to impactful collaborations, we've continuously pushed the boundaries of education. Explore our journey to witness the tangible impact we've made in shaping the future of learning.</p>
-                </div>
-                <div class="gallery-section">
-                    <div class="gallery-list owl-carousel">
-                        {% for work in workdone %}
-                        <div class="item animate" style="width: 100%!important;min-height: 100%;" data-animate="fadeInUp">
-                            <div class="portfolio-item" style="height: 100%!important;">
-                                <div class="thumb" style="display: flex;align-items: center;justify-content: center;">
-                                    <img src="{{ work.image.url }}" alt="Sample Image 1" style="object-fit: contain;">
-                                </div>
-                                <div class="thumb-inner animate" data-animate="fadeInUp">
-                                    <h4>{{ work.prjName }}</h4>
-                                    <p>{{ work.desc|safe }}</p>
-                                </div>
-                            </div>
-                        </div>
-                        {% endfor %}
-                    </div>
-                    <br>
-                    <div class="col-md-12" style="display: flex;align-items: center;justify-content: left;">
-                        <a href="{% url 'core:construction' %}"><button class="btn">View All</button></a>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
 </div>

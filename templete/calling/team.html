@@ -1,0 +1,208 @@
+{% extends 'core/index.html' %}
+{% load static %}
+
+{% block pages %}
+<style>
+    blockquote {
+	font-weight: 100;
+	max-width: 600px;
+	line-height: 1.4;
+	position: relative;
+	margin: 0;
+	padding: .2rem;
+}
+
+blockquote:before,
+blockquote:after {
+	position: absolute;
+	color: #f1efe6;
+	font-size: 8rem;
+	width: 4rem;
+	height: 4rem;
+}
+
+blockquote:before {
+	content: '“';
+	left: -5rem;
+	top: -2rem;
+}
+
+blockquote:after {
+	content: '”';
+	right: -5rem;
+	bottom: 1rem;
+}
+.card-board-directors{
+    object-fit: cover;
+    object-position: top;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /* box-shadow: 7px 7px 10px 1px #060a0f; */
+    border: 2px solid #fff;
+    margin-bottom: 5px;
+}
+.card-wrapper-directors{
+    background-color: rgba(250,250,250,0.25);
+  border-radius: 10px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  padding: 10px;
+    opacity: .8;
+    cursor: pointer;
+}
+.card-wrapper-directors:hover{
+    background-color: #fff;
+    color: #1e1e1e;
+}
+.card-wrapper-directors:hover .card-board-directors{
+    border: 2px solid #444;
+}
+.mentors-card {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.mentors-about p{
+    text-align: left;
+}
+</style>
+<div class="section animated-row" data-section="slide02">
+    <div class="section-inner">
+        <div class="container">
+            <div class="row">
+                <h3 class="col-md-12" style="text-decoration: underline;text-align: left;">Boards of directors</h3>
+                <div class="col-md-4 p-4">
+                    <div class="card-wrapper-directors">
+                        <img class="card-board-directors" src="../../static/assets/images/team/director.png" alt="">
+                        <h5>Prof. Ashish Ghosh</h5>
+                    </div>
+                </div>
+                <div class="col-md-4 p-4">
+                    <div class="card-wrapper-directors">
+                        <img class="card-board-directors" src="../../static/assets/images/team/registrar.png" alt="">
+                        <h5>Dr. Debashish Jena</h5>
+                    </div>
+                </div>
+                <div class="col-md-4 p-4">
+                    <div class="card-wrapper-directors">
+                        <img class="card-board-directors" src="../../static/assets/images/team/sanjay.jpg" alt="">
+                        <h5>Dr. Sanjay Saxena</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-8">
+                    <hr style="background-color: white;margin-bottom: 40px;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 p-4" style="padding-top: 0!important;">
+                    <div class="card-wrapper-directors">
+                        <img class="card-board-directors" src="../../static/assets/images/team/sanjay.jpg" alt="">
+                        <h5>(CEO) Dr. Sanjay Saxena</h5>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <blockquote style="text-align: left;">
+                        Dear Visitors, <br><br>
+                        Welcome to the RIPITT Foundation at IIIT Bhubaneswar. As a Section 8 company, we are dedicated to advancing research,
+                        fostering innovation, and driving impactful projects. Our mission is to create a vibrant ecosystem that bridges the gap
+                        between academic research and industry needs, supporting the growth of startups and entrepreneurial ventures. <br><br>
+                        At RIPITT, we believe in developing innovative solutions to real-world challenges, nurturing interdisciplinary
+                        collaboration, and promoting sustainable and eco-friendly technologies. Our robust incubation environment offers
+                        startups the essential tools, mentorship, and resources needed to transform their ideas into successful businesses. <br><br>
+                        We are excited about the journey ahead and the opportunities to make significant contributions to science, technology,
+                        and society. I invite you to explore our initiatives, participate in our programs, and join us in shaping the future of
+                        innovation and research. <br>
+                        <br>
+                        Best regards, <br>
+                        Dr. Sanjay Saxena <br>
+                        CEO, RIPITT Foundation <br>
+                        IIIT Bhubaneswar
+                    </blockquote>
+                </div>
+            </div>
+            <div class="row">
+                <h3 class="mt-5 col-md-12" style="text-decoration: underline;text-align: left;">Mentors</h3>
+                    <div class="col-md-4 mb-4">
+                        <div class="card-wrapper-directors mentors-card">
+                            <img class="card-board-directors" src="../../static/assets/images/team/sanjay.jpg" alt="">
+                            <div class="mentors-about">
+                                <p><h6>Dr. Sanjay Saxena</h6><b>Expertise:Research</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card-wrapper-directors mentors-card">
+                            <img class="card-board-directors" src="../../static/assets/images/team/sanjay.jpg" alt="">
+                            <div class="mentors-about">
+                                <p><h6>Dr. Sanjay Saxena</h6><b>Expertise:Research</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card-wrapper-directors mentors-card">
+                            <img class="card-board-directors" src="../../static/assets/images/team/sanjay.jpg" alt="">
+                            <div class="mentors-about">
+                                <p><h6>Dr. Sanjay Saxena</h6><b>Expertise:Research</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card-wrapper-directors mentors-card">
+                            <img class="card-board-directors" src="../../static/assets/images/team/sanjay.jpg" alt="">
+                            <div class="mentors-about">
+                                <p><h6>Dr. Sanjay Saxena</h6><b>Expertise:Research</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card-wrapper-directors mentors-card">
+                            <img class="card-board-directors" src="../../static/assets/images/team/sanjay.jpg" alt="">
+                            <div class="mentors-about">
+                                <p><h6>Dr. Sanjay Saxena</h6><b>Expertise:Research</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card-wrapper-directors mentors-card">
+                            <img class="card-board-directors" src="../../static/assets/images/team/sanjay.jpg" alt="">
+                            <div class="mentors-about">
+                                <p><h6>Dr. Sanjay Saxena</h6><b>Expertise:Research</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card-wrapper-directors mentors-card">
+                            <img class="card-board-directors" src="../../static/assets/images/team/sanjay.jpg" alt="">
+                            <div class="mentors-about">
+                                <p><h6>Dr. Sanjay Saxena</h6><b>Expertise:Research</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card-wrapper-directors mentors-card">
+                            <img class="card-board-directors" src="../../static/assets/images/team/sanjay.jpg" alt="">
+                            <div class="mentors-about">
+                                <p><h6>Dr. Sanjay Saxena</h6><b>Expertise:Research</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card-wrapper-directors mentors-card">
+                            <img class="card-board-directors" src="../../static/assets/images/team/sanjay.jpg" alt="">
+                            <div class="mentors-about">
+                                <p><h6>Dr. Sanjay Saxena</h6><b>Expertise:Research</b></p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock pages %}

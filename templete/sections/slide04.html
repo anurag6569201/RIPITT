@@ -1,22 +1,24 @@
 {% load static %}
 <div class="section animated-row" data-section="slide02">
     <div class="section-inner">
-        <div class="row">
-            <div class="col-md-6">
-                <header class="header" style="text-align: left;">
-                    <h1>Meet Our People</h1>
-                    <p>We are proud to introduce our leadership team People:</p>
-                    <ul>
-                        <li><b>Director of IIIT Bhubaneswar:</b> Ashish Ghosh</li>
-                        <li><b>Registrar:</b> Debasis Jena</li>
-                        <li><b>Head of CSE and CEO of RIPITT: </b>Sanjay Saxena</li>
-                    </ul>
-                    <p>These dedicated professionals are at the forefront of innovation and excellence at the RIPITT Foundation.</p>
-                    <a href="{% url 'core:about' %}"><button class="btn">View People</button></a>
-                </header>
-            </div>
-            <div class="col-md-6">
-                <img height="400px" src="../../static/assets/images/team.svg" alt="">
+        <div class="row justify-content-center">
+            <div class="row">
+                <div class="col-md-6">
+                    <header class="header" style="text-align: left;">
+                        <h1>Meet Our People</h1>
+                        <p>We are proud to introduce our leadership team People:</p>
+                        <ul>
+                            <li><b>Director of IIIT Bhubaneswar: </b>Prof. Ashish Ghosh</li>
+                            <li><b>Registrar:</b> Dr. Debasis Jena</li>
+                            <li><b>Head of CSE and CEO of RIPITT: </b>Dr. Sanjay Saxena</li>
+                        </ul>
+                        <p>These dedicated professionals are at the forefront of innovation and excellence at the RIPITT Foundation.</p>
+                        <a href="{% url 'core:team' %}"><button class="btn">View People</button></a>
+                    </header>
+                </div>
+                <div class="col-md-6">
+                    <img height="400px" src="../../static/assets/images/team.svg" alt="">
+                </div>
             </div>
         </div>
     </div>

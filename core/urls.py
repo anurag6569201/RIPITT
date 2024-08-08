@@ -9,6 +9,7 @@ urlpatterns = [
     path('services/<int:id>/', views.services, name="services"),
     path('about/',views.about,name="about"),
     path('team/',views.team,name="team"),
+    path('event/',views.event,name="event"),
     path('apply/',views.apply,name="apply"),
 
     # demo pages

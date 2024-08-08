@@ -37,6 +37,9 @@ def about(request):
 def team(request):
     return render(request,"calling/team.html")
 
+def event(request):
+    return render(request,"calling/event.html")
+
 
 def apply(request):
     return render(request,"calling/apply.html")
