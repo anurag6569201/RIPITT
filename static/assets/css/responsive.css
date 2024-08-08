@@ -194,6 +194,19 @@
 	}
 }
 @media only screen and (max-width: 767px) {
+	blockquote:before {
+		left: -3rem!important;
+	}
+	blockquote:after {
+		right: -3rem!important;
+	}
+	.team-section{
+		margin-top: 10vh;
+	}
+	.serve-section,
+	.about-section{
+		margin-top: 13vh;
+	}
 	.laptop-nav{
 		display: none;
 	}
