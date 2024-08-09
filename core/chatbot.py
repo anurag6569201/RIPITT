@@ -8,9 +8,9 @@ from .chunks_creation import text_split
 
 from dotenv import load_dotenv
 load_dotenv()
-#download embedding model
+from langchain_google_genai import GoogleGenerativeAIEmbeddings
 def download_hugging_face_embeddings():
-    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+    embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
     return embeddings
 
 embeddings = download_hugging_face_embeddings()
@@ -40,8 +40,7 @@ def load_alredy_index():
     return docsearch
 
 prompt_template="""
-You are a seasoned Q&A expert. Based on the context provided, your task is to give a clear and concise answer. 
-The data in the html code make sure in ans do not include html just answer the question by taking the data from the html codes
+You are a seasoned Q&A expert. your task is to give a clear and concise answer. 
 
 Context: {context}
 Question: {question}
@@ -61,7 +60,7 @@ llm_model=ChatGoogleGenerativeAI(model="gemini-pro",google_api_key=google_gemini
 qa=RetrievalQA.from_chain_type(
     llm=llm_model, 
     chain_type="stuff",
-    retriever=load_alredy_index().as_retriever(search_kwargs={'k': 2}),
+    retriever=load_alredy_index().as_retriever(),
     return_source_documents=True, 
     chain_type_kwargs=chain_type_kwargs)
 
