@@ -14,4 +14,7 @@ urlpatterns = [
 
     # demo pages
     path('construction/',views.construction,name="construction"),
+
+    # chatbot
+        path('send-message/', views.send_message, name='send_message'),
 ]
