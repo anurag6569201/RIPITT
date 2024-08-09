@@ -31,7 +31,7 @@ def initialize_pinecone():
         embeddings,
         index_name='ripitt'
     )
-initialize_pinecone()
+# initialize_pinecone()
 
 def load_alredy_index():
     index_name="ripitt"
