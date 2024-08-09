@@ -430,12 +430,12 @@ a#logo {
 }
 .title-container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .main-image-title {
-  height: 1em; 
-  width: auto; 
+  height: .8em; 
+  width: .9em; 
 }
 .welcome-title {
   font-size: 2em; 

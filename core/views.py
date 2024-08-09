@@ -4,6 +4,15 @@ from django.shortcuts import redirect
 from core.models import *
 from django.shortcuts import get_object_or_404
 
+
+from dotenv import load_dotenv
+import os
+import google.generativeai as genai
+import json
+from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
+
+
 def index(request):
     return redirect("core:home")
 
