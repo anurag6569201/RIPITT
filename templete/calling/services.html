@@ -7,10 +7,14 @@
         <div class="row justify-content-center">
             <div class="col-md-8 wide-col-laptop mb-4 serve-section">
                 <div style="text-align: left;justify-content: center;align-items: center;">
-                            <h3>{{ briefmodel.topic }}</h3>
+                        <h3>{{ briefmodel.topic }}</h3>
                     <div class="col-md-12">
                         <div>{{ briefmodel.content|safe }}</div>
                     </div>
+                    {% if '/services/4/' in request.path %}
+                        <a href="#"><button class="btn">Download MOU Form</button></a>
+                    {% endif %}
+                        <a href="#"><button class="btn">Apply Now</button></a>
                 </div>
             </div>
             {% include 'components/contact.html' %}

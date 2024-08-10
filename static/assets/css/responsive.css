@@ -320,6 +320,10 @@
 	}
 }
 @media only screen and (max-width: 575px) {
+	.direct-chat-messages {
+		width: 350px;
+		height: 70vh;
+	}
 	.welcome-title {
 		font-size: 40px;
 	}
