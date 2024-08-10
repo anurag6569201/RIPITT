@@ -1,7 +1,6 @@
 from asyncio.log import logger
 from langchain import PromptTemplate
 from langchain.chains import RetrievalQA
-from langchain.embeddings import HuggingFaceEmbeddings
 import os
 from langchain.prompts import PromptTemplate
 from .chunks_creation import text_split
