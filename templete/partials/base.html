@@ -72,7 +72,17 @@
         const bodyclass = document.body;
         const sendMessageUrl = "{% url 'core:send_message' %}";
 
-        
+        function turnChat() {
+            chatToggle.style.display = "block";
+            chatbtnToggle.style.display = "none";
+            bodyclass.style.pointerEvent="none"
+        }
+
+        function offChat() {
+            chatToggle.style.display = "none";
+            chatbtnToggle.style.display = "block";
+            bodyclass.style.pointerEvent="initial"
+        }
 
         function sendMessage() {
             const userInput = document.getElementById('user-input').value;
