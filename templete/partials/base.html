@@ -8,7 +8,7 @@
     <title>RIPITT</title>
 
     <!--- favicon-->
-    <link rel="shortcut icon" href="../../static/assets/images/user.jpeg" type="image/x-icon">
+    <link rel="shortcut icon" href="../../static/assets/images/img/logo.png" type="image/x-icon">
     {% include 'partials/style.html' %}
     {% include 'partials/script.html' %}
 </head>
@@ -17,10 +17,14 @@
 
     {% block index %}
     {% endblock index %}
-
-    <!-- chatbot -->
-    <div class="chatbot_btn" onclick="turnChat()">
-        <span><i class="fa-solid fa-comments"></i></span>
+    <div class="apply-chatbot-btn">
+        <div class="apply-btn">
+            <a href=""><i class="fa-solid fa-pen-to-square"></i></a>
+         </div>
+        <!-- chatbot -->
+        <div class="chatbot_btn" onclick="turnChat()">
+            <span><i class="fa-solid fa-comments"></i></span>
+        </div>
     </div>
 
     <div class="page-content page-container" id="page-content" style="display: none;text-align: left;">
@@ -65,17 +69,10 @@
     <script>
         const chatToggle = document.querySelector('.page-content');
         const chatbtnToggle = document.querySelector('.chatbot_btn');
+        const bodyclass = document.body;
         const sendMessageUrl = "{% url 'core:send_message' %}";
 
-        function turnChat() {
-            chatToggle.style.display = "block";
-            chatbtnToggle.style.display = "none";
-        }
-
-        function offChat() {
-            chatToggle.style.display = "none";
-            chatbtnToggle.style.display = "block";
-        }
+        
 
         function sendMessage() {
             const userInput = document.getElementById('user-input').value;

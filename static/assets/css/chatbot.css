@@ -283,20 +283,27 @@
     color: #fff;
     background-color: black;
     border-color: black;
-} 
-
+}
+.apply-chatbot-btn{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    z-index: 1000;
+}
+.apply-btn a,
 .chatbot_btn span{
     border: 1px solid #ffffff;
-    position: fixed;
-    bottom: 1vw;
-    right: 1vw;
     padding: .13em;
-    z-index: 1000;
     border-radius: .3em;
     background-color: #2d9ba5;
     cursor: pointer;
     padding: 8px 11px;
 }
+.apply-btn a:hover,
 .chatbot_btn span:hover{
     background-color: white;
     border: 1px solid #444;
