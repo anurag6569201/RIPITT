@@ -15,20 +15,15 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    gap: 15px;
-    margin-top: 6vh;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 14vh;
 }
 .mobile-ul-links li{
     list-style: none;
     text-align: left;
-    box-shadow: 2px 2px 5px 1px #256167;
     font-size: 1.3em;
     font-weight: 700;
-    border-radius:5px;
-    padding: 3px 10px;
-    border: 1px solid #256167;
-    text-shadow: 2px 2px 9px #214548;
 }
 .app {
   position: relative;

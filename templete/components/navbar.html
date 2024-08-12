@@ -18,7 +18,7 @@
     <div class="container-fluid">
         <div class="navbar">
             <a href="#" id="logo" title="RIPITT">
-                <img src="../../static/assets/images/img/logo.png" alt="" height="80px">
+                <img loading="lazy" src="../../static/assets/images/img/logo.png" alt="" height="80px">
             </a>
             <div class="navigation-row">
                 <nav id="navigation">
@@ -44,7 +44,7 @@
     <div class="container-fluid" style="padding: 0;">
         <div class="navbar" style="padding: 0;">
             <a href="#" id="logo" title="RIPITT">
-                <img src="../../static/assets/images/img/logo.png" alt="" height="80px">
+                <img loading="lazy" src="../../static/assets/images/img/logo.png" alt="" height="80px">
             </a>
             <div class='wrapper'>
                 <div class='app'>
@@ -60,6 +60,9 @@
                             </div>
                         </div>
                         <div class='nav-content'>
+                            <a href="#" id="logo" class="mobile-nav-logo" title="RIPITT" style="z-index: 10;opacity: 0;">
+                                <img loading="lazy" src="../../static/assets/images/img/logo.png" alt="" height="80px">
+                            </a>
                             <div class="mobile-nav-links">
                                 <ul class="mobile-ul-links">
                                     <li {% if '/home/' in request.path or '/home/' in request.path %}data-menuanchor="slide01"{% endif %}><a href="{% url 'core:home' %}#slide01">Home</a></li>

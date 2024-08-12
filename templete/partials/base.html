@@ -1,7 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,11 +53,11 @@
                 </div>
                 <div class="box-footer">
                     <div class="input-group">
-                        <input type="text" id="user-input" name="message" placeholder="Type Message ..."
+                        <input required type="text" id="user-input" name="message" placeholder="Type Message ..."
                             class="form-control">
                         <span class="input-group-btn">
-                            <button type="button" onclick="sendMessage()" class="btn btn-warning btn-flat"
-                                >Send</button>
+                            <button style="padding: 0 10px !important;border-width: 1.5px !important;" type="button" onclick="sendMessage()" class="btn btn-warning btn-flat"
+                                ><i class="fa-solid fa-paper-plane"></i></button>
                         </span>
                     </div>
                 </div>

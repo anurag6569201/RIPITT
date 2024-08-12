@@ -315,7 +315,7 @@
 .btn-warning:hover{
     background-color: #2d9ba5;
     color: white;
-    border: 1px solid #113529;
+    border: 1.5px solid #113529;
 }
 #user-input{
     background-color: rgba(45, 155, 165,1);
