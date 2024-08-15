@@ -38,15 +38,17 @@ def load_alredy_index():
     docsearch=PC.from_existing_index(index_name, embeddings)
     return docsearch
 
-prompt_template="""
-You are a seasoned Q&A expert. your task is to give a clear and concise answer. 
+prompt_template = """
+You are a seasoned Ripitt assistant and Q&A expert. Your task is to provide a clear and concise answer. 
 
 Context: {context}
 Question: {question}
 
-If you dont know the answer,just use your brain and information regarding you know
+If the answer is not present in the provided context or if the question is general (such as greetings or inquiries about your capabilities), use your knowledge to give a helpful response.
+
 Helpful answer:
 """
+
 
 PROMPT=PromptTemplate(template=prompt_template, input_variables=["context", "question"])
 chain_type_kwargs={"prompt": PROMPT}

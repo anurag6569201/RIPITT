@@ -416,7 +416,7 @@ a#logo {
 .welcome-title {
   font-weight: 700;
   font-size: 120px;
-  margin-bottom: 10px;
+  margin-bottom: 0px !important;
   letter-spacing:0.02em;
   display: flex;
   align-items: center;
@@ -431,6 +431,8 @@ a#logo {
 .title-container {
   display: flex;
   align-items: baseline;
+  /* font-size: 5.5em; */
+  /* gap: .07em; */
 }
 
 .main-image-title {
