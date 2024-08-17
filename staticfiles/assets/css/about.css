@@ -1,0 +1,24 @@
+.quote {
+    backdrop-filter: blur(1px) saturate(200%);
+    -webkit-backdrop-filter: blur(1px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.65);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    text-align: left;
+}
+.quoteImage{
+    padding: 0;
+}
+.quoteData h5{
+    text-decoration: underline;
+}
+.quoteData{
+    padding: 5px;
+}
+.quoteRegards p{
+    padding: 0;
+    margin: 0;
+}
+.about-section li ul li{
+    list-style: none;
+}

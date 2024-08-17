@@ -45,6 +45,7 @@ Context: {context}
 Question: {question}
 
 If the answer is not present in the provided context or if the question is general (such as greetings or inquiries about your capabilities), use your knowledge to give a helpful response.
+if question is general use normal answers.
 
 Helpful answer:
 """
