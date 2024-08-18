@@ -320,6 +320,9 @@
 	}
 }
 @media only screen and (max-width: 575px) {
+	.background-logo{
+		left: 0;
+	}
 	.meet-svg-people img{
 		height: 300px !important;
 	}
@@ -401,7 +404,7 @@
 		left: 45%;
 	}
 	.welcome-title{
-		padding-top: 4em;
+		padding-top: 5em;
 	}
 	.about-section .about-img{
 		margin-top: 1em;
