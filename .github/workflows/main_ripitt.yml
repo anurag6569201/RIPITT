@@ -75,6 +75,5 @@ jobs:
         with:
           app-name: 'ripitt'
           slot-name: 'Production'
-          resource-group-name: 'ripitt-rg'
-          src: 'version1/'
+          package: version1 
           
