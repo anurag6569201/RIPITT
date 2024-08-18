@@ -3,7 +3,8 @@ from django.http import JsonResponse
 from django.shortcuts import render
 from django.shortcuts import redirect
 
-from core.models import *
+from core.models import ServiceModels,BreifServiceModels,TestimonialModels,ContactModels,mentorsModels
+
 from django.shortcuts import get_object_or_404
 
 import json
@@ -37,7 +38,7 @@ def about(request):
     return render(request,"calling/about.html",context)
 
 def team(request):
-    mentors=mentorsModels.objects.all()
+    mentors = mentorsModels.objects.all().order_by('order')
     context={
        'mentors':mentors,
     }

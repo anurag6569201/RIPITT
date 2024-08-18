@@ -6,4 +6,8 @@ admin.site.register(ServiceModels)
 admin.site.register(BreifServiceModels)
 admin.site.register(TestimonialModels)
 admin.site.register(ContactModels)
-admin.site.register(mentorsModels)
+
+class mentorServiceModels(admin.ModelAdmin):
+    list_display = ('name', 'order')
+
+admin.site.register(mentorsModels, mentorServiceModels)

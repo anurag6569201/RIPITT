@@ -7,17 +7,19 @@
         <div class="row justify-content-center">
             <div class="col-md-8 wide-col-laptop mb-4 serve-section">
                 <div class="row">
-                    <div class="col-md-9" style="text-align: left; justify-content: center; align-items: center;">
+                    <div class="col-md-10" style="text-align: left; justify-content: center; align-items: center;">
                         <h3>{{ briefmodel.topic }}</h3>
                         <div class="col-md-12">
                             <div>{{ briefmodel.content|safe }}</div>
                         </div>
                     </div>
-                    <div class="col-md-3 d-flex align-items-baseline justify-content-center">
+                    <div class="col-md-2 d-flex align-items-baseline justify-content-center">
                         <div class="btn-contain-apply text-center">
                             <a href="#"><button class="btn btn-contain-apply-btn mb-2" style="position: sticky;top: 0%;right: 0;">Apply Now</button></a>
                             {% if '/services/4/' in request.path %}
                                 <a href="#"><button class="btn btn-contain-apply-btn"><i class="fa-solid fa-download"></i> MOU Form</button></a>
+                            {% else %}
+                                <a href="#"><button class="btn btn-contain-apply-btn mb-2" style="position: sticky;top: 0%;right: 0;"><i class="fa-solid fa-download"></i> Details</button></a>
                             {% endif %}
                         </div>
                     </div>
