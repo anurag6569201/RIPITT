@@ -65,9 +65,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_F06DE544CE884FAA88FF6DC9F2E0F512 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_F30A73CC9E7E4FF19438B05FB9A2A7B7 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_3094B8A46EA04382AFB601422416A802 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_6B6FF80F378B49948500546AD21B7485 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_233C3166C4DA42939DFA5995DFD527E0 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_8E48AD099C3B4528B6FF9C034FC67700 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
@@ -75,5 +75,4 @@ jobs:
         with:
           app-name: 'ripitt'
           slot-name: 'Production'
-          package: version1
           
