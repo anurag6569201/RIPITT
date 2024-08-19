@@ -48,10 +48,6 @@ def event(request):
     return render(request,"calling/event.html")
 
 
-def apply(request):
-    return render(request,"calling/apply.html")
-
-
 def construction(request):
     return render(request,"calling/construction.html")
 
