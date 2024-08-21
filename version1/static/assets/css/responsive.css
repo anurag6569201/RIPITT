@@ -194,6 +194,10 @@
 	}
 }
 @media only screen and (max-width: 767px) {
+	.welcome-title svg {
+		height: fit-content;
+		width: 100vw;
+	}
 	blockquote:before {
 		left: -3rem!important;
 	}
@@ -320,6 +324,9 @@
 	}
 }
 @media only screen and (max-width: 575px) {
+	.archivo-black-regular{
+		font-size: 80px;
+	}
 	.background-logo{
 		left: 0;
 	}
