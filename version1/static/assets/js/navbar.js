@@ -36,3 +36,23 @@
       });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const scrollContainer = document.querySelector('.scroll');
+    const scrollContent = document.querySelector('.scroll-content');
+    scrollContent.innerHTML += scrollContent.innerHTML;
+
+    let contentWidth = scrollContent.scrollWidth / 2;
+    let scrollAmount = 0;
+
+    function scrollNewsTicker() {
+        scrollAmount -= 1; 
+        if (Math.abs(scrollAmount) >= contentWidth) {
+            scrollAmount = 0; 
+        }
+        scrollContent.style.transform = `translateX(${scrollAmount}px)`;
+        requestAnimationFrame(scrollNewsTicker);
+    }
+
+    scrollNewsTicker();
+});

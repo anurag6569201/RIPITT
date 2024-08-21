@@ -1,0 +1,48 @@
+{% load static %}
+<style>
+    .heading-news-home1 {
+        top: 80px;
+    }
+</style>
+<div class="section animated-row" data-section="slide08">
+    <div class="section-inner">
+        <div class="row justify-content-center">
+            <div class="col-md-8 wide-col-laptop">
+                <h1>[ Under Construction ]</h1>
+            </div>
+        </div>
+        <section class="heading-news-home heading-news-home1">
+            <div class="scroll scroll1">
+                <div class="scroll-content scroll-content1">
+                    <div class="text3">
+                        <li><span>Dr. Sanjay Saxena's</span> recent research paper published in Journal of <span>Cancer Research</span> and <span>Clinical Oncology</span></li>
+                    </div>
+                    <div class="text3">
+                        <li><span>Dr. Sanjay Saxena's</span> recent research paper published in Journal of <span>Cancer Research</span> and <span>Clinical Oncology</span></li>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const scrollContainer = document.querySelector('.scroll1');
+    const scrollContent = document.querySelector('.scroll-content1');
+    scrollContent.innerHTML += scrollContent.innerHTML;
+
+    let contentWidth = scrollContent.scrollWidth / 2;
+    let scrollAmount = 0;
+
+    function scrollNewsTicker() {
+        scrollAmount -= 1; 
+        if (Math.abs(scrollAmount) >= contentWidth) {
+            scrollAmount = 0; 
+        }
+        scrollContent.style.transform = `translateX(${scrollAmount}px)`;
+        requestAnimationFrame(scrollNewsTicker);
+    }
+
+    scrollNewsTicker();
+});
+</script>
