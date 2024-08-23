@@ -1,0 +1,31 @@
+{% load static %}
+
+<div class="section animated-row" data-section="slide03">
+    <div class="section-inner">
+        <div class="row justify-content-center">
+            <div class="col-md-8 wide-col-laptop">
+                <div class="title-block animate" data-animate="fadeInUp">
+                    <h2 class="mt-5">What We Offer</h2>
+                    <p>Our wide range of services are backed by industry knowledge and our passion to help clients find solutions perfectly tailored to their needs.</p>
+                </div>
+                <div class="services-section">
+                    <div class="services-list row">
+                        {% for service in services %}
+                        <div class="col-md-4 mb-4">
+                            <a class="card h-100" href="{% url 'core:services' id=service.pk %}" style="background-color: transparent;">
+                                <div class="item animate card-body" data-animate="fadeInUp">
+                                    <div class="service-box">
+                                        <span class="service-icon"><i class="{{service.iconClass}}" aria-hidden="true"></i></span>
+                                        <h3>{{ service.name }}</h3>
+                                        <p>{{ service.content|truncatechars:80 }}</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

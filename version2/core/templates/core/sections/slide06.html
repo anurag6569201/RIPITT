@@ -1,0 +1,32 @@
+{% load static %}
+<div class="section animated-row" data-section="slide05">
+    <div class="section-inner">
+        <div class="row justify-content-center">
+            <div class="col-md-8 wide-col-laptop">
+                <div class="title-block animate mt-5" data-animate="fadeInUp">
+                    <h2>WHAT THEY SAY?</h2>
+                </div>
+                <div class="col-md-8 offset-md-2">
+                    <div class="testimonials-section">
+                        <div class="testimonials-slider owl-carousel">
+                            {% for review in testimonial %}
+                            <div class="item animate" data-animate="fadeInUp">
+                                <div class="testimonial-item">
+                                    <div class="client-row">
+                                        <img loading="lazy" style="object-fit: cover;" src="{{ review.image.url }}" class="rounded-circle" alt="profile 1">
+                                    </div>
+                                    <div class="testimonial-content">
+                                        <h4 style="margin: 0;">{{ review.name }}</h4>
+                                        <p>"{{ review.text }}"</p>
+                                        <span>{{ review.position }}</span>
+                                    </div>                                           
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -22,7 +22,7 @@ def home(request):
         'services':service,
         'testimonial':testimonial,
     }
-    return render(request,"calling/pages.html",context)
+    return render(request,"core/app/index.html",context)
 
 def services(request,id):
     briefmodel = get_object_or_404(BreifServiceModels, pk=id)

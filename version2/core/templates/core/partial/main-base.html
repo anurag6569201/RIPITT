@@ -3,13 +3,10 @@
 <html lang="en">
 
 <head>
-    {% include 'core/partial/main-style.html' %}
-
-    {% block appstylecontent %}
-    {% endblock appstylecontent %}
+{% include 'core/partial/main-style.html' %}
 </head>
 
-<body style="background-image: url(../../static/whatsapp/images/whatsappBack.png);">
+<body>
     
     {% include 'core/component/loader.html' %}
     {% include 'core/component/navbar.html' %}
@@ -17,9 +14,9 @@
     <div style="display: flex;flex-direction: column;min-height: 88vh;justify-content: space-between;">
         {% block content %}
         {% endblock content %}
-    
-        {% include 'core/component/footer.html' %}
     </div>
+
+    {% include 'core/component/chatbot.html' %}
 </body>
     {% include 'core/partial/main-script.html' %}
 
