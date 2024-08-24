@@ -2,32 +2,13 @@
 {% load static %}
 
 {% block index %}
-
-<div id="video" style="overflow-x: hidden;">
-
-    <video autoplay muted loop id="myVideo">
-      <source src="../../../static/core/video/video-bg.mp4" type="video/mp4">
-    </video>
-    <div class="myVideo">
-        <img src="../../../static/core/images/logo.png" alt="" class="welcome-image background-logo" style="position: absolute;opacity: .3;bottom: 0;right: 7vw;">
-    </div>
-
-    <div id="fullpage" class="fullpage-default">
-        {% block pages %}
-        {% endblock pages %}
-    </div>
-
-    <div id="social-icons">
-        <div class="text-right">
-            <ul class="social-icons">
-                <li><a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#" title="Linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href="#" title="Instagram"><i class="fa-brands fa-whatsapp"></i></a></li>
-            </ul>
-        </div>
-    </div>
-</div>  
-
-
+{% include 'core/pages/slide01.html' %}
+{% include 'core/pages/slide02.html' %}
+{% include 'core/pages/slide03.html' %}
+{% include 'core/pages/slide04.html' %}
+{% include 'core/pages/slide05.html' %}
+{% include 'core/pages/slide06.html' %}
+{% include 'core/pages/slide07.html' %}
+{% include 'core/pages/slide08.html' %}
+{% include 'core/component/contact.html' %}
 {% endblock index %}
