@@ -1,11 +1,11 @@
 {% load static %}
-<div class="section animated-row" data-section="slide02">
+<div class="section animated-row" data-section="slide04">
     <div class="section-inner">
         <div class="row justify-content-center">
             <div class="col-lg-8 wide-col-laptop">
                 <div class="row">
                     <div class="col-md-6">
-                        <header class="header" style="text-align: left;">
+                        <header class="animate header" data-animate="fadeInUp" style="text-align: left;">
                             <h1>Meet Our People</h1>
                             <p>We are proud to introduce our leadership team People:</p>
                             <ul>
@@ -17,7 +17,7 @@
                             <a href="{% url 'core:team' %}"><button class="btn">View People</button></a>
                         </header>
                     </div>
-                    <div class="col-md-6 meet-svg-people">
+                    <div class="animate col-md-6 meet-svg-people" data-animate="fadeInUp">
                         <img loading="lazy" height="400px" src="../../static/assets/images/team.svg" alt="">
                     </div>
                 </div>
