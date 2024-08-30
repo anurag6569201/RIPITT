@@ -1,0 +1,9 @@
+Syntax:- 
+[Unit]
+Description=ripitt.gunicorn socket
+
+[Socket]
+ListenStream=/run/ripitt.gunicorn.sock
+
+[Install]
+WantedBy=sockets.target

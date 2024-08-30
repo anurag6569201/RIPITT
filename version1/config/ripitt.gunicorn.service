@@ -1,0 +1,17 @@
+[Unit]
+Description=ripitt.gunicorn daemon
+Requires=ripitt.gunicorn.socket
+After=network.target
+
+[Service]
+User=anurag_ripitt
+Group=anurag_ripitt
+WorkingDirectory=/Users/anurag_ripitt/RIPITT/version1
+ExecStart=\Users\anurag_ripitt\RIPITT\version1\ripitenv\bin\gunicorn \
+          --access-logfile - \
+          --workers 3 \
+          --bind unix:/run/ripitt.gunicorn.sock \
+          ripitt.wsgi:application
+
+[Install]
+WantedBy=multi-user.target
