@@ -1,11 +1,15 @@
 name: Deploy
 
+# Trigger the workflow on push and
+# pull request events on the master branch
 on:
   push:
-    branches: ["main"]
+    branches: ["master"]
   pull_request:
-    branches: ["main"]
+    branches: ["master"]
 
+# Authenticate to the the server via ssh
+# and run our deployment script
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -18,5 +22,4 @@ jobs:
           username: ${{ secrets.USERNAME }}
           port: ${{ secrets.PORT }}
           key: ${{ secrets.SSHKEY }}
-          password: ${{ secrets.SSHPASSWORD }}  
           script: "cd ~/RIPITT/version1/ && ./.scripts/deploy.sh"
