@@ -3,7 +3,7 @@ from django.http import JsonResponse
 from django.shortcuts import render
 from django.shortcuts import redirect
 
-from core.models import ServiceModels,BreifServiceModels,TestimonialModels,ContactModels,mentorsModels
+from core.models import ServiceModels,BreifServiceModels,TestimonialModels,ContactModels,mentorsModels,ScrollContenModel
 
 from django.shortcuts import get_object_or_404
 
@@ -18,9 +18,11 @@ def index(request):
 def home(request):
     testimonial=TestimonialModels.objects.all()
     service=ServiceModels.objects.all()
+    scroller=ScrollContenModel.objects.all()
     context={
         'services':service,
         'testimonial':testimonial,
+        'scroller':scroller,
     }
     return render(request,"calling/pages.html",context)
 

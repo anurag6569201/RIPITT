@@ -31,3 +31,11 @@ class mentorsModels(models.Model):
     expertise=models.CharField(max_length=150)
     website=models.CharField(max_length=200)
     order=models.IntegerField(null=True,default="0")
+
+
+class ScrollContenModel(models.Model):
+    text1=models.CharField(max_length=100,blank=True,null=True)
+    text2=models.CharField(max_length=100,blank=True,null=True)
+    text3=models.CharField(max_length=100,blank=True,null=True)
+    text4=models.CharField(max_length=100,blank=True,null=True)
+    text5=models.CharField(max_length=100,blank=True,null=True)

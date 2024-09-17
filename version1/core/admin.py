@@ -1,13 +1,11 @@
 from django.contrib import admin
 
-from core.models import ServiceModels,BreifServiceModels,TestimonialModels,ContactModels,mentorsModels
+from core.models import ServiceModels,BreifServiceModels,TestimonialModels,ContactModels,mentorsModels,ScrollContenModel
 
 admin.site.register(ServiceModels)
 admin.site.register(BreifServiceModels)
 admin.site.register(TestimonialModels)
 admin.site.register(ContactModels)
+admin.site.register(ScrollContenModel)
 
-class mentorServiceModels(admin.ModelAdmin):
-    list_display = ('name', 'order')
-
-admin.site.register(mentorsModels, mentorServiceModels)
+admin.site.register(mentorsModels)

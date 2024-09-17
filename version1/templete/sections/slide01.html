@@ -65,12 +65,18 @@
             <section class="heading-news-home">
                 <div class="scroll">
                     <div class="scroll-content">
+                        {% for scrolls in scroller %}
                         <div class="text3">
-                            <li>Inauguration of <span>RIPITT</span> will be held on <span>September 24th</span> at <span>IIIT Bhubaneswar</span> campus</li>
+                            <li>
+                                {% if scrolls.text1 %}{{ scrolls.text1 }}{% endif %}
+                                {% if scrolls.text2 %}<span>{{ scrolls.text2 }}</span>{% endif %}
+                                {% if scrolls.text3 %}{{ scrolls.text3 }}{% endif %}
+                                {% if scrolls.text4 %}<span>{{ scrolls.text4 }}</span>{% endif %}
+                                {% if scrolls.text5 %}{{ scrolls.text5 }}{% endif %}
+                            </li>
                         </div>
-                        <div class="text3">
-                            <li><span>Dr. Sanjay Saxena's</span> recent research paper published in Journal of <span>Cancer Research</span> and <span>Clinical Oncology</span></li>
-                        </div>
+                        {% endfor %}
+                    
                     </div>
                 </div>
             </section>            

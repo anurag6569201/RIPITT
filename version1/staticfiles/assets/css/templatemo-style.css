@@ -395,6 +395,62 @@ a#logo {
 /*==============================================
 04. WELCOME BLOCK CSS
 ================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+.welcome-title svg{
+  height: fit-content;
+  width: 50vw;
+}
+.archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 1000;
+  font-style: normal;
+}
+
+/* heading */
+.heading-news-home {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.scroll {
+  display: flex;
+  width: 100%;
+  background-color: #a1d9e2;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transform: rotate(-2deg); 
+}
+
+.scroll-content {
+  display: flex;
+  white-space: nowrap;
+}
+
+.scroll div {
+  display: inline-block;
+  white-space: nowrap;
+  color: #212121;
+  background-color: #a1d9e2;
+}
+
+.scroll span {
+  color: #2d9ba5;
+  font-weight: 600;
+}
+.text3{
+  margin-right: 40px;
+}
+
+/*==============================================
+04. WELCOME BLOCK CSS
+================================================*/
 .welcome-box {
   font-size:20px;
   line-height:1.7;
